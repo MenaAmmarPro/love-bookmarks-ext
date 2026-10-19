@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Love Bookmarks</title>
+    <link rel="stylesheet" href="../common/theme.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="bk-head">
+      <h1>Our Places</h1>
+      <p class="bk-sub" id="bk-count">0 saved</p>
+    </header>
+
+    <main class="bk-main">
+      <div class="bk-save">
+        <input
+          id="bk-title"
+          class="bk-input"
+          type="text"
+          placeholder="Name this page (optional)…"
+          maxlength="80"
+          autocomplete="off"
+          aria-label="Bookmark title"
+        />
+        <button id="bk-save" class="bk-btn" type="button" title="Save current tab">Save tab</button>
+      </div>
+
+      <ul id="bk-list" class="bk-list" aria-label="Saved places"></ul>
+      <p id="bk-empty" class="bk-empty">Nothing saved yet — open a page and press “Save tab”.</p>
+    </main>
+
+    <footer class="bk-foot"><span>Made for Mena ♥</span></footer>
+
+    <script src="../common/api.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
