@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Love Bookmarks — for Mena",
+  "short_name": "Love Bookmarks",
+  "version": "1.0.0",
+  "description": "A little board of the places you both love. Save the tab you're on and open it again in one tap.",
+  "author": "Ammar (ammar49-cyber)",
+  "homepage_url": "https://github.com/MenaAmmarPro/love-bookmarks-ext",
+  "action": {
+    "default_title": "Love Bookmarks",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["tabs", "storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "love-bookmarks@menaammarpro.github.io",
+      "strict_min_version": "115.0"
+    }
+  }
+}
